@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canvascss.css">
+</head>
+</head>
+<body >
+    <img src="przy.jpeg" class="center">
+        <div style = "text-align:center;">
+<canvas id="myCanvas" width="1000px" height="500px"  style="border: 10px  solid #777777 ; ">
+
+
+    <script>
+        //zielony pro
+        const zi = document.getElementById("myCanvas");
+        const iz = zi.getContext("2d");
+        iz.fillStyle = "green";
+        iz.fillRect(250,175,500,100);
+
+        //czerwony pro
+        const cz = document.getElementById("myCanvas");
+        const zc = cz.getContext("2d");
+        zc.fillStyle = "red";
+        zc.fillRect(230,210,20,30);
+
+        //zółty pro
+        const zo = document.getElementById("myCanvas");
+        const oz = zo.getContext("2d");
+        oz.fillStyle = "yellow";
+        oz.fillRect(450,125,100,50);
+
+        //czarny pro
+        const nb = document.getElementById("myCanvas");
+        const bn= nb.getContext("2d");
+        bn.fillStyle = "blue";
+        bn.fillRect(485,140,30,20);
+
+
+        //lewe kolo
+        const lk = document.getElementById("myCanvas");
+const kl = lk.getContext("2d");
+
+kl.beginPath();
+kl.arc(320, 315, 40, 0, 2 * Math.PI);
+kl.fillStyle = "black";
+kl.fill();
+
+
+//prawe kolo
+
+const pk = document.getElementById("myCanvas");
+const kp = pk.getContext("2d");
+
+kp.beginPath();
+kp.arc(720, 315, 40, 0, 2 * Math.PI);
+kp.fillStyle = "black";
+kp.fill();
+        </script>
+</canvas>
+</div>
+</body>
+</html>
